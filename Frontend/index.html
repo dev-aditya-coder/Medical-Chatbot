@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediChat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="app">
+
+
+        <!-- =========================
+             LEFT SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <h1>
+                        Medi<span>Chat</span>
+                    </h1>
+
+                    <p>
+                        AI Medical Assistant
+                    </p>
+                </div>
+
+            </div>
+
+
+            <nav class="navigation">
+
+                <button
+                    class="nav-item active"
+                    id="chatNav"
+                >
+                    <span>▣</span>
+                    Chat
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    id="libraryNav"
+                >
+                    <span>▤</span>
+                    Health Library
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    id="symptomsNav"
+                >
+                    <span>♧</span>
+                    Symptoms Guide
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    id="aboutNav"
+                >
+                    <span>ⓘ</span>
+                    About
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    id="clearChatButton"
+                >
+                    <span>↻</span>
+                    Clear Chat
+                </button>
+
+            </nav>
+
+
+            <div class="priority-card">
+
+                <div class="heart-icon">
+                    ♥
+                </div>
+
+                <h2>
+                    Your Health<br>
+                    Our Priority
+                </h2>
+
+                <p>
+                    Get reliable, clear and trustworthy
+                    medical information.
+                </p>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="chat-section">
+
+
+            <!-- =========================
+                 CHAT VIEW
+            ========================== -->
+
+            <section
+                class="page-view active-view"
+                id="chatView"
+            >
+
+                <div class="chat-header">
+
+                    <h2>
+                        Hello! 👋<br>
+                        I'm your
+                        <span>AI Medical Assistant</span>
+                    </h2>
+
+                    <p>
+                        Ask any health-related question or
+                        describe your symptoms.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="messages"
+                    id="chatBox"
+                >
+
+                    <div class="message assistant">
+
+                        <div class="avatar">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <div class="bubble">
+                                Hello! I'm your AI Medical Assistant.<br>
+                                Describe your symptoms or ask a medical question.
+                            </div>
+
+                            <div class="time">
+                                10:15 AM
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-container">
+
+                    <button class="attachment">
+                        📎
+                    </button>
+
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="Type your message here..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="sendButton"
+                        class="send-button"
+                    >
+                        ➤
+                    </button>
+
+                </div>
+
+
+                <div class="disclaimer">
+                    ⚠ AI-generated information.
+                    This is not a medical diagnosis.
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 HEALTH LIBRARY
+            ========================== -->
+
+            <section
+                class="page-view"
+                id="libraryView"
+            >
+
+                <div class="page-header">
+
+                    <h2>
+                        Health <span>Library</span>
+                    </h2>
+
+                    <p>
+                        Explore common health topics and
+                        learn more about them.
+                    </p>
+
+                </div>
+
+
+                <div class="library-grid">
+
+                    <div class="library-card">
+                        <div class="library-icon">
+                            🫀
+                        </div>
+
+                        <h3>
+                            Heart Health
+                        </h3>
+
+                        <p>
+                            Learn about blood pressure,
+                            heart health and cardiovascular wellness.
+                        </p>
+                    </div>
+
+
+                    <div class="library-card">
+                        <div class="library-icon">
+                            🧠
+                        </div>
+
+                        <h3>
+                            Brain & Mental Health
+                        </h3>
+
+                        <p>
+                            Explore information about headaches,
+                            sleep and mental wellbeing.
+                        </p>
+                    </div>
+
+
+                    <div class="library-card">
+                        <div class="library-icon">
+                            🫁
+                        </div>
+
+                        <h3>
+                            Respiratory Health
+                        </h3>
+
+                        <p>
+                            Learn about common respiratory
+                            conditions and symptoms.
+                        </p>
+                    </div>
+
+
+                    <div class="library-card">
+                        <div class="library-icon">
+                            🥗
+                        </div>
+
+                        <h3>
+                            Nutrition
+                        </h3>
+
+                        <p>
+                            Explore general information about
+                            nutrition and healthy habits.
+                        </p>
+                    </div>
+
+
+                    <div class="library-card">
+                        <div class="library-icon">
+                            🌡️
+                        </div>
+
+                        <h3>
+                            Fever & Infections
+                        </h3>
+
+                        <p>
+                            Understand common causes of fever
+                            and related symptoms.
+                        </p>
+                    </div>
+
+
+                    <div class="library-card">
+                        <div class="library-icon">
+                            🩹
+                        </div>
+
+                        <h3>
+                            Skin Health
+                        </h3>
+
+                        <p>
+                            Learn about common skin concerns
+                            such as acne and irritation.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 SYMPTOMS GUIDE
+            ========================== -->
+
+            <section
+                class="page-view"
+                id="symptomsView"
+            >
+
+                <div class="page-header">
+
+                    <h2>
+                        Symptoms <span>Guide</span>
+                    </h2>
+
+                    <p>
+                        Select a common symptom to learn
+                        more about it.
+                    </p>
+
+                </div>
+
+
+                <div class="symptoms-list">
+
+                    <button class="symptom-card">
+                        <span>🤒</span>
+
+                        <div>
+                            <h3>
+                                Fever
+                            </h3>
+
+                            <p>
+                                An increase in body temperature
+                                that can occur with many conditions.
+                            </p>
+                        </div>
+
+                        <b>›</b>
+                    </button>
+
+
+                    <button class="symptom-card">
+                        <span>🧠</span>
+
+                        <div>
+                            <h3>
+                                Headache
+                            </h3>
+
+                            <p>
+                                Pain or discomfort occurring
+                                in different areas of the head.
+                            </p>
+                        </div>
+
+                        <b>›</b>
+                    </button>
+
+
+                    <button class="symptom-card">
+                        <span>🤧</span>
+
+                        <div>
+                            <h3>
+                                Cold
+                            </h3>
+
+                            <p>
+                                Common symptoms can include
+                                congestion, sneezing and sore throat.
+                            </p>
+                        </div>
+
+                        <b>›</b>
+                    </button>
+
+
+                    <button class="symptom-card">
+                        <span>🫃</span>
+
+                        <div>
+                            <h3>
+                                Stomach Pain
+                            </h3>
+
+                            <p>
+                                Discomfort or pain occurring
+                                in the abdominal area.
+                            </p>
+                        </div>
+
+                        <b>›</b>
+                    </button>
+
+
+                    <button class="symptom-card">
+                        <span>💧</span>
+
+                        <div>
+                            <h3>
+                                Dehydration
+                            </h3>
+
+                            <p>
+                                A condition that can occur when
+                                the body loses more fluids than it takes in.
+                            </p>
+                        </div>
+
+                        <b>›</b>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 ABOUT
+            ========================== -->
+
+            <section
+                class="page-view"
+                id="aboutView"
+            >
+
+                <div class="page-header">
+
+                    <h2>
+                        About <span>MediChat</span>
+                    </h2>
+
+                    <p>
+                        Your AI-powered medical information assistant.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        ✦
+                    </div>
+
+                    <h2>
+                        What is MediChat?
+                    </h2>
+
+                    <p>
+                        MediChat is an AI-powered chatbot designed
+                        to provide concise medical information based
+                        on retrieved knowledge.
+                    </p>
+
+
+                    <div class="about-points">
+
+                        <div>
+                            <span>✦</span>
+                            AI-powered responses
+                        </div>
+
+                        <div>
+                            <span>✦</span>
+                            Retrieval-based medical information
+                        </div>
+
+                        <div>
+                            <span>✦</span>
+                            Simple conversational interface
+                        </div>
+
+                        <div>
+                            <span>✦</span>
+                            Designed for educational information
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-warning">
+
+                        ⚠ MediChat provides informational
+                        responses and should not be used as a
+                        substitute for professional medical advice,
+                        diagnosis or treatment.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- =========================
+             RIGHT SIDEBAR
+        ========================== -->
+
+        <aside class="right-sidebar">
+
+            <div class="info-card">
+
+                <div class="medical-art">
+                    🩺
+                </div>
+
+                <h2>
+                    Trusted Information
+                </h2>
+
+                <p>
+                    Get evidence-based medical answers,
+                    powered by AI.
+                </p>
+
+            </div>
+
+
+            <div class="topics-card">
+
+                <h2>
+                    ✦ &nbsp;Try asking about
+                </h2>
+
+
+                <button>
+                    ❄️
+                    <span>Common cold</span>
+                    <b>›</b>
+                </button>
+
+
+                <button>
+                    🧠
+                    <span>Headache</span>
+                    <b>›</b>
+                </button>
+
+
+                <button>
+                    ✦
+                    <span>Acne</span>
+                    <b>›</b>
+                </button>
+
+
+                <button>
+                    🌡️
+                    <span>Fever</span>
+                    <b>›</b>
+                </button>
+
+
+                <button>
+                    🫃
+                    <span>Stomach pain</span>
+                    <b>›</b>
+                </button>
+
+
+                <button>
+                    💧
+                    <span>Diabetes</span>
+                    <b>›</b>
+                </button>
+
+
+                <button>
+                    ♡
+                    <span>Blood pressure</span>
+                    <b>›</b>
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
